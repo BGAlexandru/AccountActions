@@ -1,0 +1,19 @@
+<%switch(req_url){
+   case '/':{%>
+      <div id='Index' style='flex:1;'></div>
+   <%break}
+   case '/login':
+   case  '/signin':{
+      if(!logged){%>
+         <div id='Account_Submit' style='flex:1;'>
+            <input type='text' placeholder='User Name' class='account_input' value='A'><br>
+            <input type='password' placeholder='Password' class='account_input' value='PassA!'><br>
+            <%if(req_url=='/signin'){%>
+            <input type='password' placeholder='Confirm Password' class='account_input'><br>
+            <%}%>
+            <button onclick='Form_Account_Submit()'>Submit Now</button>
+            <p id='msg' style='color: red; text-transform: uppercase;'></p>
+         </div>
+      <%}
+   break}
+}%>

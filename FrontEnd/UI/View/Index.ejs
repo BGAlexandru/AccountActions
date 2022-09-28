@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang='en' style='height: 100%; width: 100%; margin: 0; font-family: Arial;'>
+<head>
+    <title>Game Maker</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <!--libraries-->
+    <link rel='stylesheet' type='text/css' href='/Scripts/bootstrap-5.1.3/css/bootstrap.min.css'>
+    <script type='text/javascript' src='/Scripts/bootstrap-5.1.3/js/bootstrap.bundle.min.js'></script>
+    <script type='text/javascript' src='/Scripts/jquery-3.6.0.min.js'></script>
+</head>
+<body style='height: 100%; width: 100%; margin: 0; font-family: Arial;'>
+    <div style='height: 100%; width: 100%; display:flex; flex-direction:column;'>
+        <%- include('Navbar') -%>
+        <%- include('Page_Content') -%>
+    </div>
+    <%IndexScript=['/UI/JS/Functions.js', '/UI/JS/Form_Submit.js']%>
+    <%for(let i = 0; i < IndexScript.length; i++){%>
+        <script type='text/javascript' src='<%=IndexScript[i]%>'></script>
+    <%}%>
+</body>
+</html>

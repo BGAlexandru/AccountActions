@@ -1,0 +1,22 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "Backend",
+  "main": ".../Server/Index.js",
+  "scripts": {
+    "test": "node ..\\Server\\Index.js"
+  },
+  "author": {
+    "name": "Belecciu Gabriel Alexandru",
+    "email": "gabriel.belecciu@365.univ-ovidius.ro"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3"
+  }
+}
